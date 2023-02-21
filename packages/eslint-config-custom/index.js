@@ -1,0 +1,46 @@
+module.exports = {
+  extends: ["next", "turbo", "prettier", "plugin:prettier/recommended"],
+  plugins: ["react", "@next/eslint-plugin-next", "prettier"],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2020,
+    requireConfigFile: false,
+  },
+  env: {
+    node: true,
+    browser: true,
+    commonjs: true,
+  },
+  rules: {
+    "@next/next/no-html-link-for-pages": "off",
+    "react/jsx-key": "off",
+    "import/prefer-default-export": 0,
+    "no-console": "warn",
+    "no-nested-ternary": 0,
+    "no-underscore-dangle": 0,
+    "no-unused-expressions": ["error", { allowTernary: true }],
+    camelcase: 0,
+    "react/self-closing-comp": 1,
+    "react/jsx-filename-extension": [
+      1,
+      { extensions: [".ts", "tsx", "js", "jsx"] },
+    ],
+    "react/prop-types": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-no-comment-textnodes": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/no-array-index-key": 0,
+    "react/no-unescaped-entities": 0,
+    "react/require-default-props": 0,
+    "react/react-in-jsx-scope": 0,
+    "linebreak-style": ["error", "unix"],
+    semi: ["error", "never"],
+    "prettier/prettier": [
+      "error",
+      { endOfLine: "auto" },
+      { usePrettierrc: true },
+    ],
+  },
+};
