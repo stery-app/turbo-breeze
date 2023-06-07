@@ -10,15 +10,24 @@ export type UserType = {
 export declare type Url = string | UrlObject;
 
 export type FaviconProps = {
-  basePath?: string
-  themeColor?: string
-}
+  basePath?: string;
+  themeColor?: string;
+};
 
-export type ButtonProps = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+export type ButtonProps = React.DetailedHTMLProps<
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+>;
 
-export type InputProps = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
+export type InputProps = React.DetailedHTMLProps<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  HTMLInputElement
+>;
 
-export type LabelProps = React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>
+export type LabelProps = React.DetailedHTMLProps<
+  React.LabelHTMLAttributes<HTMLLabelElement>,
+  HTMLLabelElement
+>;
 
 export type NavLinkProps = {
   active?: boolean;
@@ -51,12 +60,12 @@ export type NavigationProps = {
 };
 
 export type AuthCardProps = {
-  logo: JSX.Element
+  logo: JSX.Element;
   children?: string | number | JSX.Element | JSX.Element[];
-}
+};
 
 export type AuthSessionStatusProps = {
-  status: string | JSX.Element | null
-  className?: string
+  status: string | JSX.Element | null;
+  className?: string;
   children?: string | number | JSX.Element | JSX.Element[];
-}
+};

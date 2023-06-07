@@ -4,7 +4,7 @@ import logoInline from "@/img/inline-colored-sm.png";
 
 type LogoProps = {
   type?: "thumbnail" | "inline";
-  className?: string
+  className?: string;
 };
 const ApplicationLogo = ({ type = "thumbnail", ...props }: LogoProps) => {
   if (type === "inline") {

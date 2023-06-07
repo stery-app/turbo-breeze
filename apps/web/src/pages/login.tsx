@@ -56,7 +56,10 @@ const Login = () => {
       <AuthCard
         logo={
           <Link href="/">
-            <ApplicationLogo type="inline" className="h-16 object-contain text-gray-500" />
+            <ApplicationLogo
+              type="inline"
+              className="h-16 object-contain text-gray-500"
+            />
           </Link>
         }
       >
@@ -109,7 +112,9 @@ const Login = () => {
                 onChange={(event) => setShouldRemember(event.target.checked)}
               />
 
-              <span className="ml-2 text-sm text-gray-600 dark:text-gray-200 dark:hover:text-gray-400">Remember me</span>
+              <span className="ml-2 text-sm text-gray-600 dark:text-gray-200 dark:hover:text-gray-400">
+                Remember me
+              </span>
             </label>
           </div>
 

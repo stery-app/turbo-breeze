@@ -13,7 +13,7 @@ type RegisterProps = {
   name?: string;
   email?: string;
   password?: string;
-  remember?: boolean
+  remember?: boolean;
   password_confirmation?: string;
   setErrors?:
     | ((e: any[]) => void)

@@ -5,6 +5,7 @@
 </a>
 
 # Turbo Breeze
+
 **Turborepo authentication starter kit for Laravel Breeze**
 
 ## What's inside?
